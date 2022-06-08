@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <section class="cloud">
+        <div id="wed"></div>
+    </section>
+
+    <div id="map"></div>
+    
+
+    <section class="temrmo">
+        <div id="term_pipe"><div class="value"></div></div>
+        <main id="temp">
+            <p class="error hide-error"></p>
+        </main>
+    </section>
+    <div class="info_cont hide">
+        <div class="card">
+            <h2 class="station_title">station Name</h2>
+            <div id="card_main">
+                 <div id="dist">
+                    <img id="line" src="./assets/images/svg/line.svg" alt="">
+                     <h3>400m</h3>
+                    </div>
+                 <div id="bikes">
+                     <h3 class="capacity">3/10</h3>
+                     <img id="bike_img" src="./assets/images/png/bike.png" alt="">
+                    </div>
+                </div>
+            <div><button id="walk_butn">
+                <h4>Walk</h4>
+            </button></div>
+    </div>
+    </div>
+
+    <main class="menu">
+        <button id="position"> <div id="arow"></div></button>
+        <div id="menu">
+            <button id="bike"></button>
+            <button id="serch"></button>
+            <button id="settings"></button>
+        </div>
+    </main>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+    <script type="module" src="./js/app.js"></script>
+    
+</body>
+</html>
